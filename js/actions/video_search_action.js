@@ -6,14 +6,14 @@
 ;(function(root, factory) {
     if (typeof define === 'function' && define.amd) {
         define(['SearchAction'], function() {
-            return (root.SearchAction = factory(SearchAction));
+            return (root.VideoSearchAction = factory(SearchAction));
         });
     }
     else if (typeof exports === 'object') {
         module.exports = factory(require('SearchAction'));
     }
     else {
-        root.SearchAction = factory(root.SearchAction);
+        root.VideoSearchAction = factory(root.SearchAction);
     }
 }(this, function() {
     'use strict';

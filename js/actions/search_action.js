@@ -7,14 +7,14 @@
 ;(function(root, factory) {
     if (typeof define === 'function' && define.amd) {
         define(['DefaultAction'], function() {
-            return (root.DefaultAction = factory(DefaultAction));
+            return (root.SearchAction = factory(DefaultAction));
         });
     }
     else if (typeof exports === 'object') {
         module.exports = factory(require('DefaultAction'));
     }
     else {
-        root.DefaultAction = factory(root.DefaultAction);
+        root.SearchAction = factory(root.DefaultAction);
     }
 }(this, function() {
     'use strict';
@@ -42,7 +42,7 @@
             writable: true,
             value: 'http://google.com/?q='
         }
-});
+    });
 
 // Public Methods ______________________________________________________________
 
